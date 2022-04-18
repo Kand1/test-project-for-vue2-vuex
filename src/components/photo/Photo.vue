@@ -1,11 +1,11 @@
 <template>
-  <v-col cols="3">
+  <v-col>
     <v-card
         class="mx-auto my-12"
-        max-width="300"
+        width="300"
         @click="openPhoto">
       <v-img
-          width="20vw"
+          width="300px"
           :src="photo.url"/>
       <v-card-title>
         {{photo.title}}
@@ -23,6 +23,9 @@ export default {
     photo: {
       type: Object,
       required: true
+    },
+    columnsCount: {
+      type: Number
     }
   },
   methods: {

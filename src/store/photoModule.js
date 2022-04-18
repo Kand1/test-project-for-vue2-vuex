@@ -36,7 +36,7 @@ export default {
     },
     actions: {
         fetchPhotos(context) {
-            axios.get("https://jsonplaceholder.typicode.com/photos?_limit=7")
+            axios.get("https://jsonplaceholder.typicode.com/photos?_limit=8")
                 .then(response => context.commit('setPhotos', response.data))
         }
     }
