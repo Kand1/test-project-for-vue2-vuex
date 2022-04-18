@@ -7,7 +7,7 @@
         </div>
       </v-card-title>
       <v-card-text>
-        You can add new card
+        You can open photo or add a new one
       </v-card-text>
     </v-card>
     <PhotoForm
