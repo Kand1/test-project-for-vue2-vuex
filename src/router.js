@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router"
 import Main from "@/pages/MainPage";
 import PhotosPage from "@/pages/PhotosPage";
+import {createWebHashHistory } from 'vue-router'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,6 @@ const routes = [
 ]
 
 export default new VueRouter({
-    mode: "history",
+    mode: "hash",
     routes
 })
